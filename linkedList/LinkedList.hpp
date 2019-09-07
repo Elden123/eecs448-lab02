@@ -8,7 +8,8 @@
 template <typename T>
 LinkedList<T>::LinkedList() : m_front(nullptr), m_size(0)
 {
-
+	m_front = nullptr;
+    m_size = 0;
 }
 
 template <typename T>
@@ -29,10 +30,7 @@ bool LinkedList<T>::isEmpty() const
 template <typename T>
 int LinkedList<T>::size() const
 {
-	/** TODO 
-		Fix this method
-	*/
-	return(0);
+	return(m_size);
 }
 
 template <typename T>
